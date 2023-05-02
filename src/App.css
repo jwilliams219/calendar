@@ -1,0 +1,111 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 95vh;
+}
+
+.calendar {
+  margin: 0 1em;
+}
+
+.react-calendar__navigation {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.react-calendar__viewContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1em;
+}
+
+.react-calendar__tile {
+  min-height: 10vh;
+  max-height: 20vh;
+}
+
+.react-calendar__tile--now {
+  border: 1px solid #2c4a5f;
+}
+
+abbr {
+  text-decoration: underline;
+  padding-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+.individual-event {
+  min-width: 50vw;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 1.5em;
+  margin: 1.5em 0;
+}
+
+.individual-event h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.event-edit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.individual-event button {
+  margin: 0.2em 0.2em;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0077cc;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #005fa3;
+}
+
+.login button:active {
+  background-color: #004d8c;
+}
+
+input {
+  width: 95%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.log-out {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
