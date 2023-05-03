@@ -1,5 +1,5 @@
-import React, { useEffect, useState, KeyboardEvent, useRef } from "react";
-import { Feature, Geometry, GeoJsonProperties, Position } from 'geojson';
+import { useEffect, useState, useRef } from "react";
+import { Feature, Geometry, GeoJsonProperties } from 'geojson';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';

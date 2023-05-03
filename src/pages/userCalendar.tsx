@@ -1,5 +1,4 @@
 import React, { useEffect, useState, KeyboardEvent, useRef } from "react";
-import UserContext, { User } from "../context/user";
 import Calendar from 'react-calendar';
 import { db } from '../lib/firebase';
 import { collection, addDoc, getDocs, setDoc, deleteDoc, doc } from "firebase/firestore";
@@ -83,7 +82,7 @@ export const UserCalendar = () =>{
         }
     }, [newItemStartTime])
 
-    const tileContent = ({ date, view }) => {
+    const tileContent = ({ date, view}: any) => {
         if (view === "month") {
             let itemTitles = [];
             const today = new Date();
@@ -97,7 +96,7 @@ export const UserCalendar = () =>{
                     }
                 }
             }
-            let listItems = <div></div>;
+            let listItems: any = <div></div>;
             if (itemTitles.length !== 0) {
                 listItems = itemTitles.map((item) => {
                     return <li key={item}>{item}</li>;
@@ -339,6 +338,7 @@ export const UserCalendar = () =>{
             }
         </div>;
     } else {
+        // @ts-ignore
         calendarOutput = <Calendar onChange={onChange} value={value} tileContent={tileContent} onClickDay={(day, e) => clickDay(day)}/>
     }
 

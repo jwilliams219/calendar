@@ -9,10 +9,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@types/debug": "^4.1.7",
     "firebase": "^9.20.0",
     "firebase-tools": "^11.29.0",
     "mapbox-gl": "^2.14.1",
